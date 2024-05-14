@@ -1,53 +1,118 @@
-/* Basic reset */
-body, h1, p, ul, li {
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body and Page Layout */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #fff;
+    line-height: 1.6;
     padding: 20px;
 }
 
-/* Header Styles */
+/* Main Content Styling */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* Navigation Styles */
-nav ul {
-    list-style: none;
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
     background-color: #555;
 }
 
-nav ul li {
-    display: inline;
+/* Section Styling */
+section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #ffcc00; /* Highlight color */
 }
 
-nav ul li a {
-    color: white;
-    padding: 10px;
+/* Article Styling */
+article {
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Typography and Links */
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #444;
+}
+
+p, li {
+    font-size: 1.2em;
+    line-height: 1.75;
+    color: #666;
+}
+
+a {
+    color: #ffcc00; /* Yellow accent color for links */
     text-decoration: none;
 }
 
-/* Section Styles */
-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
+a:hover {
+    text-decoration: underline;
 }
 
-/* Footer Styles */
-footer {
+/* Utility Classes */
+.text-center {
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+    }
 }
